@@ -1,0 +1,58 @@
+body {
+  background: #000000;
+}
+
+.calculator {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.result {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  color: black;
+  background-color: #e6ffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.2); /* Smoky effect on result box */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #F3F0FF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(255, 255, 255, 0.2); /* Smoky shadow effect */
+}
+
+.buttons button:hover {
+  background-color: #DFD7FF;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), 0 6px 25px rgba(255, 255, 255, 0.3); /* Smoky shadow on hover */
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 12px black, -2px -2px 12px #2f2f31;
+}
